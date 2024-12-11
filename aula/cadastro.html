@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" ">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/api/casdatdb.php" method="post">
+                    <h1>CADASTRO</h1>
+                    <div class="mb-3">
+                        <label for="exampleInputNome" class="form-label">Nome</label>
+                        <input type="text" name="nome" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputCpf" class="form-label">CPF</label>
+                        <input type="number" name="cpf" class="form-control" id="exampleInputCpf" aria-describedby="emailHelp" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputNome" class="form-label">Celular</label>
+                        <input type="number" name="telefone" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" required>
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1"  class="form-label">Senha</label>
+                      <input type="password" name="senha" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDate"  class="form-label">Data Nascimento</label>
+                        <input type="date" name="data" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary">CADASTRO</button><br><br>
+                  </form>
+                  <a href="index.html"   class="btn btn-primary">VOLTAR</a>   
+
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

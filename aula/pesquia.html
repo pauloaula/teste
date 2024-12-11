@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" ">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/api/pesquisar.php" method="post">
+                    <h1>PESQUISAR</h1>
+                    <div class="mb-3">
+                        <label for="exampleInputNome" class="form-label">Nome</label>
+                        <input type="text" name="pesquisar" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" required>
+                        <select name="op" id="">
+                            <option value="cpf" selected>cpf</option>
+                            <option value="nome" selected>Nome</option>
+                            <option value="email" selected>email</option>
+                        </select>
+                      </div>
+                      
+                    <button type="submit" class="btn btn-primary">PESQUISAR</button><br><br>
+                  </form>
+                  <a href="index.html"   class="btn btn-primary">VOLTAR</a>   
+
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
