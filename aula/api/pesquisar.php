@@ -15,7 +15,7 @@
   
 
              <?php 
-                  if($_POST["pesquisar"]!=""){
+                 // if($_POST["pesquisar"]!=""){
                         include 'conec.php';
                        // $pesquisa=$_POST["pesquisar"];
                       //  $op=$_POST["op"];
@@ -62,10 +62,10 @@
                         </table>
                     <?php 
 
-                   }else{
+                  // }else{
 
-                        echo "Digite o seu nome!";
-                    }
+                      //  echo "Digite o seu nome!";
+                   // }
                 ?>
                 
             <a href="index.html"   class="btn btn-primary">VOLTAR</a>   
