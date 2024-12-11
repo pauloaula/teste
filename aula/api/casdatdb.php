@@ -21,7 +21,7 @@
                     $data_n=$_POST['data'];
                     $senhaUser=$_POST['senha'];
 
-                    $sql ="INSERT INTO `alunos`( `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha`) VALUES ('$nome','$cpf','$email','$data_n','$telefone','$senhaUser')";
+                    $sql ="INSERT INTO `cliente`( `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha`) VALUES ('$nome','$cpf','$email','$data_n','$telefone','$senhaUser')";
 
                     $salva = mysqli_query($conn,$sql);
                     echo "DADOS CADASTRADO <br> <br>";
