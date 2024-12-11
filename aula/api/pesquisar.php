@@ -15,14 +15,14 @@
   
 
              <?php 
-                    if($_POST["pesquisar"]!=""){
+                  */  if($_POST["pesquisar"]!=""){
                         include 'conec.php';
                         $pesquisa=$_POST["pesquisar"];
                         $op=$_POST["op"];
                         $sql="SELECT `id`, `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha` FROM `cliente` WHERE `$op`='$pesquisa'";
                      
                         $executar=mysqli_query($conn,$sql);
-                        ?> 
+                        */?> 
                         <table class="table table-striped table-hover">
                         
                             <thead>
@@ -39,7 +39,9 @@
                             <tbody>
                                 <?php
                                 $id=0;
-                               
+                               $sql="SELECT `id`, `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha` FROM `cliente`";
+                     
+                        $executar=mysqli_query($conn,$sql);
                       while($resultado=mysqli_fetch_array($executar)){
                         $id=$id+1;
                         
@@ -59,11 +61,11 @@
                         </table>
                     <?php 
 
-                    }else{
+                  /*  }else{
 
                         echo "Digite o seu nome!";
                     }
-                ?>
+                ?>*/
                 
             <a href="index.html"   class="btn btn-primary">VOLTAR</a>   
             </div>
