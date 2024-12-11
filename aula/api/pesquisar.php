@@ -19,7 +19,7 @@
                         include 'conec.php';
                         $pesquisa=$_POST["pesquisar"];
                         $op=$_POST["op"];
-                        $sql="SELECT `id`, `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha` FROM `alunos` WHERE `$op`='$pesquisa'";
+                        $sql="SELECT `id`, `nome`, `cpf`, `email`, `data_nasc`, `telefone`, `senha` FROM `cliente` WHERE `$op`='$pesquisa'";
                      
                         $executar=mysqli_query($conn,$sql);
                         ?> 
